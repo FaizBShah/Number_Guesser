@@ -61,15 +61,15 @@ guessBtn.addEventListener('click', function() {
 
       guessInput.value = '';
       guessInput.style.borderColor = 'red';
-      //setMessage(`${guess} is not correct, ${guessesLeft} guesses left`, 'red');
-      if(Math.abs(guess-winningNum)<3)
-      {
-        setMessage(`Your guess was very close!! ${guessesLeft} guesses left`, 'red');
-      }
-      else
-      {
-        setMessage(`Your guess was very far!! ${guessesLeft} guesses left`, 'red');
-      }
+      setMessage(`${guess} is not correct, ${guessesLeft} guesses left`, 'red');
+      //if(Math.abs(guess-winningNum)<3)
+      //{
+        //setMessage(`Your guess was very close!! ${guessesLeft} guesses left`, 'red');
+      //}
+      //else
+      //{
+        //setMessage(`Your guess was very far!! ${guessesLeft} guesses left`, 'red');
+      //}
     }
   }
   }
